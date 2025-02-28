@@ -1,0 +1,65 @@
+
+.note-card {
+  min-height: 40px;  
+  max-width: 140px;  
+  width: 100%; 
+  padding: 6px;  
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  background: white;
+  border: 1px solid #ddd;
+  overflow: hidden;  
+}
+
+.note-card:hover {
+  transform: scale(1.03); 
+}
+
+
+.note-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+.note-card h5 {
+  font-size: 0.9rem;  
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+
+.note-card .card-text {
+  flex-grow: 1;
+  font-size: 0.85rem; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+}
+
+
+.row .col-sm-3 {
+  display: flex;
+  flex: 0 0 25%;  
+  max-width: 25%;
+}
+
+
+@media (max-width: 768px) {
+  .row .col-sm-3 {
+    flex: 0 0 50%; 
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .row .col-sm-3 {
+    flex: 0 0 100%; 
+    max-width: 100%;
+  }
+} 
+
+
